@@ -1,0 +1,60 @@
+.blog {
+  padding: 80px 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header {
+  margin-bottom: 40px;
+}
+.title {
+  font-size: 36px;
+  color: var(--gold);
+}
+.subtitle {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  margin-top: 8px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.card {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 250px;
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+}
+.image {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+.overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(to top, rgba(11, 27, 51, 0.9), transparent);
+  z-index: 2;
+}
+.cardTitle {
+  position: relative;
+  z-index: 3;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.4;
+}
+@media (max-width: 768px) {
+  .blog { padding: 48px 20px; }
+  .title { font-size: 26px; }
+  .grid { grid-template-columns: 1fr; }
+}

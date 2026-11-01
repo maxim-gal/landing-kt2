@@ -1,0 +1,48 @@
+.footer {
+  background-color: var(--gold);
+  color: var(--bg-dark);
+  padding: 60px 20px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.itemTitle {
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.itemText {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.bottom {
+  text-align: center;
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(11, 27, 51, 0.1);
+  font-family: var(--font-serif), serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 48px 20px 16px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .bottom {
+    margin-top: 40px;
+  }
+}
